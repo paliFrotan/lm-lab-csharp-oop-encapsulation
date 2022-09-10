@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Encapsulation.Models;
 
+
+
 const string MY_ACCOUNT_NUMBER = "ABCDEFG123";
 
 //DODGY BANK ACCOUNT
@@ -56,3 +58,8 @@ Console.WriteLine("Oh no :( It looks like we can't do this - it's too secure!");
 //mySecureBankAccount._accountBalance = 1000000;
 mySecureBankAccount.DisplayAccountBalanceDetails();
 Console.WriteLine("😹 Well I guess that's secure!");
+//System.Diagnostics.Debug.WriteLine("😹 Well I guess that's secure!");
+// weather
+WeatherReporter weatherSetting = new("London",23D);
+
+Console.WriteLine(weatherSetting.PrintSummary());
